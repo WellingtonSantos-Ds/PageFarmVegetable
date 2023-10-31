@@ -1,7 +1,19 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
+
 *{
  box-sizing: border-box; 
  margin: 0;
  padding: 0;
+}
+html{
+  height: 100%;
+}
+
+:root{
+  --colorHeder: #1C1C1C;
+  --colorText:#ffff;
+  --fontForm: 1rem;
 }
 
 .header{ 
@@ -11,34 +23,54 @@
 
   width: 100%;
   height: 6.25rem;
-  background: #1E1E1E;
+  background:var(--colorHeder);
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .header .world-peas  {
   margin-left: 2rem;
   font-size: 1.75rem;
-  color: aliceblue;
+  color:var(--colorText);
 }
 
 .header .menu{
   margin-right: 2rem;
-  color: aliceblue;
+  color:var(--colorText);
 }
 
-.container .text{
-  margin: 5.69rem 1rem 0rem;
+.divmenu{
+  background-color: var(--colorText);
+  height: .2rem;
+  width: 3rem;
+  margin-top: .5rem    ;
+}
+
+.container {
+  margin: 0 .88rem;
 }
 
 .container .text p{
  text-align: center;
+ margin: 5.69rem 0 4rem 0;
+ color: #1C1C1C;
+ text-align: center;
+ font-family: Newsreader;
  font-size: 1.5rem;
-  
+ font-style: normal;
+ font-weight: 400;
+ line-height: 143%; /* 2.145rem */
+ letter-spacing: 0.015rem;
+
+
 }
 .container .know{
-  margin-top: 4rem;
   display: flex;
   justify-content: center;
  
+}
+
+.container .know button:hover{
+background-color: #f6f4f8;
+color: var(--colorHeder);
 }
 .container .know button{
   box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -50,17 +82,129 @@
   border-radius: 8px;
   font-family: Newsreader;
   font-size: 1.5rem;
-  font-style: normal;
+  font-style: Medium;
+ 
+} 
+
+
+.bustt{ 
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  height:18rem ;
  
 }
 
-.vegetables{
+.bustt .busttDiv{
+  background-color: #f6f4f8;
+  width: 23rem;
+  height: 18rem;
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+ img{
+  width: 22rem;
+  height: 18rem;
+ }
+ .texto{
+ padding: 0.88rem;
+ }
+
+.textParceiros{
+  margin-top: 3.85rem;
+  color: #1C1C1C;
+  text-align: center;
+  font-family: Newsreader;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%; 
+  letter-spacing: 0.015rem;
+  }
+
+.divLine{
   display: flex;
   justify-content: center;
 }
 
-.vegetables .carrot{
-  width: 22.0625rem;
-  height: 25.9375rem;
-  background-color: antiquewhite;
+ .line  {
+  margin: 0.8rem;
+  width: 10rem;
+  height: 0.0625rem;
+  background-color: #1E1E1E;
+} 
+.formContact h2{
+  margin-top: 1rem;
 }
+
+ .formContact form{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  margin: 0 auto;
+  height: 25rem;
+  margin-top: 3.85rem;
+  background-color: #f6f4f8;
+
+}
+
+.formContact input[type="text"] , input[type="email"]{
+  width: 18rem; 
+  padding: .50rem;
+  margin-top: 1rem;
+  font-size: var(--fontForm);
+  border: none;
+  border-bottom: .1rem solid var(--colorHeder);
+  background-color: #f6f4f8;
+  
+} 
+.formContact textarea{
+  width: 18rem;
+  height: 10rem;
+  padding-top: 20px;
+  border: none;
+  resize: none;
+  font-size: var(--fontForm);
+  border-bottom: .1rem solid var(--colorHeder);
+  background-color: #f6f4f8;
+}
+
+#submitForm{
+  width: 18rem;
+  height: 4rem;
+  background-color: #1C1C1C;
+  border-radius: 8px;
+  color: var(--colorText);
+  font-family: Newsreader;
+  font-size: 1.2rem;
+  font-style: bold;
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 1rem 0 2rem 0;
+}
+ #submitForm:hover {
+  background-color: var(--colorText);
+  color: #1C1C1C;
+}
+.fildCont{
+  height: 12rem;
+  padding: 2rem 0 0 0.7rem;
+  background-color: var(--colorHeder);
+  color: var(--colorText);
+}
+.fild {
+  background-color: var(--colorHeder);
+  color: #f6f4f8;
+}
+.fild p{
+  margin-left: 1.3rem;
+ }
+  
+ .fildCont p{
+ margin: 1.2rem;
+ font-family: Newsreader;
+
+ font-style: medium;
+ 
+  }
